@@ -1,0 +1,18 @@
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+set show-all-if-ambiguous on
+# ignore case for completion
+set completion-ignore-case On
+set completion-map-case On
+
+
+# bind tab and shift-tab to menu-complete instead of the default complete
+#Tab:      menu-complete
+#"\e[Z":   menu-complete-backward
+
+# more tweaks for even smoother experience
+set mark-symlinked-directories On
+set visible-stats On
+set skip-completed-text On
+set show-all-if-unmodified Off
+set menu-complete-display-prefix Off
