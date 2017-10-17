@@ -3,7 +3,7 @@
 set -x 
 
 CURR_DIR=`pwd`
-cd
+cd ..
 
 ln -sfn ${CURR_DIR}/.bashrc .bashrc.user
 ln -sfn ${CURR_DIR}/.gdbinit
