@@ -6,6 +6,7 @@ CURR_DIR=`pwd`
 cd ..
 
 ln -sfn ${CURR_DIR}/.bashrc .bashrc.user
+ln -sfn ${CURR_DIR}/.zshrc
 ln -sfn ${CURR_DIR}/.gdbinit
 ln -sfn ${CURR_DIR}/.git-completion.bash
 ln -sfn ${CURR_DIR}/.gitconfig
