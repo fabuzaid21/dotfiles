@@ -13,4 +13,5 @@ ln -sfn ${CURR_DIR}/.gitconfig
 ln -sfn ${CURR_DIR}/.inputrc
 ln -sfn ${CURR_DIR}/.pyrc
 ln -sfn ${CURR_DIR}/.tmux.conf
+ln -sfn ${CURR_DIR}/.sqliterc
 
