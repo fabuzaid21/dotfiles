@@ -14,4 +14,4 @@ ln -sfn ${CURR_DIR}/.inputrc
 ln -sfn ${CURR_DIR}/.pyrc
 ln -sfn ${CURR_DIR}/.tmux.conf
 ln -sfn ${CURR_DIR}/.sqliterc
-
+ln -sfn ${CURR_DIR}/.ctags .ctags
