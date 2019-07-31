@@ -15,3 +15,5 @@ ln -sfn ${CURR_DIR}/.pyrc
 ln -sfn ${CURR_DIR}/.tmux.conf
 ln -sfn ${CURR_DIR}/.sqliterc
 ln -sfn ${CURR_DIR}/.ctags .ctags
+
+#(crontab -l 2>/dev/null; echo "1 * * * * ctags -R -o ~/tags ~/src") | crontab -
