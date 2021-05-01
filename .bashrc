@@ -15,11 +15,10 @@ export PS1='\u@\h \[\033[1;33m\]\w\[\033[0m\]$(parse_git_branch)$ '
 
 source ~/.git-completion.bash
 
-export PATH=$HOME/packages/bin:$HOME/anaconda2/bin:$PATH
-#source activate intelpython
+export PATH=$HOME/packages/bin:$PATH
 
 export C_INCLUDE_PATH=$HOME/packages/include:$C_INCLUDE_PATH
-export PKG_CONFIG_PATH=$HOME/packages/lib/pkgconfig/:$PKG_CONFIG_PATH
+export PKG_CONFIG_PATH=$HOME/packages/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=$HOME/packages/lib:$LD_LIBRARY_PATH
 export CCACHE_DIR=$HOME/.ccache
 
