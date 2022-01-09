@@ -1,0 +1,8 @@
+bat: https://github.com/sharkdp/bat
+conda: https://docs.conda.io/en/latest/
+fig: https://fig.io/
+fx: https://github.com/antonmedv/fx
+jq: https://stedolan.github.io/jq/
+nvm: https://github.com/nvm-sh/nvm
+powerlevel10k: https://github.com/romkatv/powerlevel10k
+ripgrep: https://github.com/BurntSushi/ripgrep
