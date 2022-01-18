@@ -34,7 +34,7 @@
 	oldNormal = red bold
 	oldHighlight = red bold 52
 	newNormal = 34 bold
-	newHighlight = green bold 22
+	newHighlight = 34 bold 22
 [color "diff"]
 	meta = yellow
 	frag = magenta bold
