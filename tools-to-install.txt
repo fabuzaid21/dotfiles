@@ -6,3 +6,5 @@ jq: https://stedolan.github.io/jq/
 nvm: https://github.com/nvm-sh/nvm
 powerlevel10k: https://github.com/romkatv/powerlevel10k
 ripgrep: https://github.com/BurntSushi/ripgrep
+coreutils: https://formulae.brew.sh/formula/coreutils
+diff-so-fancy: https://github.com/so-fancy/diff-so-fancy
