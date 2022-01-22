@@ -1,11 +1,11 @@
 bat: https://github.com/sharkdp/bat
 conda: https://docs.conda.io/en/latest/
+coreutils: https://formulae.brew.sh/formula/coreutils
+diff-so-fancy: https://github.com/so-fancy/diff-so-fancy
+duf: https://github.com/muesli/duf
 fig: https://fig.io/
 fx: https://github.com/antonmedv/fx
 jq: https://stedolan.github.io/jq/
 nvm: https://github.com/nvm-sh/nvm
 powerlevel10k: https://github.com/romkatv/powerlevel10k
 ripgrep: https://github.com/BurntSushi/ripgrep
-coreutils: https://formulae.brew.sh/formula/coreutils
-diff-so-fancy: https://github.com/so-fancy/diff-so-fancy
-duf: https://github.com/muesli/duf
