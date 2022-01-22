@@ -1,6 +1,7 @@
 bat: https://github.com/sharkdp/bat
 conda: https://docs.conda.io/en/latest/
 coreutils: https://formulae.brew.sh/formula/coreutils
+curlx: https://curlx.dev/
 diff-so-fancy: https://github.com/so-fancy/diff-so-fancy
 duf: https://github.com/muesli/duf
 exa: https://the.exa.website/
