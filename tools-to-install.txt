@@ -9,3 +9,4 @@ jq: https://stedolan.github.io/jq/
 nvm: https://github.com/nvm-sh/nvm
 powerlevel10k: https://github.com/romkatv/powerlevel10k
 ripgrep: https://github.com/BurntSushi/ripgrep
+tldr: https://tldr.sh
