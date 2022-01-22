@@ -1,4 +1,3 @@
-
 #### FIG ENV VARIABLES ####
 # Please make sure this block is at the start of this file.
 [ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
@@ -63,8 +62,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/google-cloud-sdk/completion.zsh.inc
-source $HOME/google-cloud-sdk/path.zsh.inc
 
 # User configuration
 
@@ -116,3 +113,7 @@ POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 # Please make sure this block is at the end of this file.
 [ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
 #### END FIG ENV VARIABLES ####
+
+if [ -f $HOME/dotfiles/.zshrc.local ]; then
+  source $HOME/dotfiles/.zshrc.local
+fi

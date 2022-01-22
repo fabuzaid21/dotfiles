@@ -22,3 +22,6 @@ export PKG_CONFIG_PATH=$HOME/packages/lib/pkgconfig:$PKG_CONFIG_PATH
 export LD_LIBRARY_PATH=$HOME/packages/lib:$LD_LIBRARY_PATH
 export CCACHE_DIR=$HOME/.ccache
 
+if [ -f $HOME/dotfiles/.bashrc.local ]; then
+  source $HOME/dotfiles/.bashrc.local
+fi
