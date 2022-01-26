@@ -1,8 +1,9 @@
 {
-  "autocomplete.addStatusToTerminalTitle" : false,
-  "autocomplete.disable" : false,
-  "autocomplete.immediatelyExecuteAfterSpace" : true,
-  "autocomplete.theme" : "dark",
-  "pty.path" : "\/Users\/fabuzaid\/.nvm\/versions\/node\/v14.17.5\/bin:\/Users\/fabuzaid\/anaconda3\/envs\/neo-tax-ml-service\/bin:\/Users\/fabuzaid\/anaconda3\/condabin:\/Users\/fabuzaid\/google-cloud-sdk\/bin:\/usr\/local\/opt\/postgresql@13\/bin:\/Users\/fabuzaid\/packages\/bin:\/usr\/local\/opt\/ruby\/bin:\/usr\/local\/bin:\/usr\/bin:\/bin:\/usr\/sbin:\/sbin:\/Users\/fabuzaid\/.fig\/bin",
-  "userShell" : "\/bin\/zsh"
+  "autocomplete.addStatusToTerminalTitle": false,
+  "autocomplete.disable": false,
+  "autocomplete.fuzzySearch": true,
+  "autocomplete.immediatelyExecuteAfterSpace": true,
+  "autocomplete.theme": "dark",
+  "pty.path": "/Users/fabuzaid/.nvm/versions/node/v14.17.5/bin:/Users/fabuzaid/anaconda3/envs/neo-tax-ml-service/bin:/Users/fabuzaid/anaconda3/condabin:/Users/fabuzaid/google-cloud-sdk/bin:/usr/local/opt/postgresql@13/bin:/Users/fabuzaid/packages/bin:/usr/local/opt/ruby/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/fabuzaid/.fig/bin",
+  "userShell": "/bin/zsh"
 }
