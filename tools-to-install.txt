@@ -9,6 +9,7 @@ fig: https://fig.io/
 fx: https://github.com/antonmedv/fx
 jq: https://stedolan.github.io/jq/
 nvm: https://github.com/nvm-sh/nvm
+oh-my-zsh: https://ohmyz.sh/
 powerlevel10k: https://github.com/romkatv/powerlevel10k
 ripgrep: https://github.com/BurntSushi/ripgrep
 tldr: https://tldr.sh
