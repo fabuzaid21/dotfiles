@@ -7,6 +7,7 @@ duf: https://github.com/muesli/duf
 exa: https://the.exa.website/
 fig: https://fig.io/
 fx: https://github.com/antonmedv/fx
+ghcup: https://www.haskell.org/ghcup/
 jq: https://stedolan.github.io/jq/
 nvm: https://github.com/nvm-sh/nvm
 oh-my-zsh: https://ohmyz.sh/
