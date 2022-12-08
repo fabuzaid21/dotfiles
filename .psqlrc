@@ -1,3 +1,4 @@
 \x auto
 \timing
 \pset null '∅'
+\set ECHO_HIDDEN on
