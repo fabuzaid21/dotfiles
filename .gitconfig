@@ -42,3 +42,5 @@
 	old = red bold
 	new = 34 bold
 	whitespace = red reverse
+[rebase]
+	updateRefs = true
