@@ -14,7 +14,9 @@ ln -sfn ${CURR_DIR}/.inputrc
 ln -sfn ${CURR_DIR}/.pyrc
 ln -sfn ${CURR_DIR}/.tmux.conf
 ln -sfn ${CURR_DIR}/.sqliterc
-ln -sfn ${CURR_DIR}/.ctags .ctags
+ln -sfn ${CURR_DIR}/.ctags
 ln -sfn ${CURR_DIR}/.psqlrc
+ln -sfn ${CURR_DIR}/.asdfrc
+ln -sfn ${CURR_DIR}/.tool-versions
 
 #(crontab -l 2>/dev/null; echo "1 * * * * ctags -R -o ~/tags ~/src") | crontab -
