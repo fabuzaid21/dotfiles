@@ -53,15 +53,18 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# User configuration
+
+# Add binaries installed by asdf to path
+export PATH="$HOME/.asdf/shims:$PATH"
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(direnv git virtualenv)
 
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -91,8 +94,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
-
-plugins=(virtualenv)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status virtualenv)
 
 
@@ -107,6 +108,3 @@ autoload -U +X bashcompinit && bashcompinit
 
 # Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
-
-# Add binaries installed by asdf to path
-export PATH="$HOME/.asdf/shims:$PATH"
