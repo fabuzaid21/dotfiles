@@ -55,8 +55,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # User configuration
 
-# Add binaries installed by asdf to path
-export PATH="$HOME/.asdf/shims:$PATH"
+# Add Homebrew to PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Add  packages and .local to PATH
+export PATH="$HOME/packages/bin:$HOME/.local/bin:$PATH"
+
+# Add binaries installed by mise to PATH
+eval "$(mise activate zsh)"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/

@@ -1,6 +1,6 @@
 [user]
 	name = Firas Abuzaid
-	email = fabuzaid21@gmail.com
+	email = firas@neo.tax
 [alias]
 	co = checkout
 	br = branch
@@ -29,7 +29,7 @@
 [pull]
 	ff = only
 [interactive]
-	diffFilter = diff-so-fancy --patch
+        diffFilter = diff-so-fancy --patch
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
