@@ -1,6 +1,7 @@
 [user]
 	name = Firas Abuzaid
 	email = firas@neo.tax
+	signingkey = 664037AEFF28EB54
 [alias]
 	co = checkout
 	br = branch
@@ -49,3 +50,7 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true

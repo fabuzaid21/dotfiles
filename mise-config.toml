@@ -1,9 +1,11 @@
 [tools]
 direnv = "2.35.0"
 node = "latest"
+pandoc = "latest"
 poetry = "2.1.4"
-python = "3.12.6"
+python = "3.11.11"
 ruby = "3.4.1"
 terraform = "latest"
 yarn = "latest"
 jj = "latest"
+pinact = "latest"
