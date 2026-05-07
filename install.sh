@@ -18,7 +18,9 @@ ln -sfn ${CURR_DIR}/.sqliterc
 ln -sfn ${CURR_DIR}/.ctags
 ln -sfn ${CURR_DIR}/.psqlrc
 
-mkdir -p .config/mise # make sure the directory exists before we create the symlink
-ln -sfn ${CURR_DIR}/mise-config.toml .config/mise/config.toml
+for dir in "mise" "hunk"; do
+  mkdir -p .config/${dir} # make sure the directory exists before we create the symlink
+  ln -sfn ${CURR_DIR}/${dir}-config.toml .config/${dir}/config.toml
+done 
 
 #(crontab -l 2>/dev/null; echo "1 * * * * ctags -R -o ~/tags ~/src") | crontab -
