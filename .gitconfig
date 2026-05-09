@@ -15,11 +15,13 @@
 	stash-all = stash --all
 	stash-untracked = stash --include-untracked
 	stash-keep-index = stash --keep-index
+	hdiff = -c core.pager=\"hunk pager\" diff
+	hshow = -c core.pager=\"hunk pager\" show
 [color]
 	ui = true
 [core]
 	autocrlf = input
-        pager = hunk pager
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [merge]
 	conflictstyle = diff3
 	ff = only
@@ -30,7 +32,7 @@
 [pull]
 	ff = only
 [interactive]
-        diffFilter = diff-so-fancy --patch
+	diffFilter = diff-so-fancy --patch
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
