@@ -1,0 +1,2 @@
+copy-on-select = clipboard
+selection-clear-on-copy = true

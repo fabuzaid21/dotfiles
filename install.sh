@@ -23,4 +23,8 @@ for dir in "mise" "hunk"; do
   ln -sfn ${CURR_DIR}/${dir}-config.toml .config/${dir}/config.toml
 done 
 
+for dir in "ghostty"; do
+  mkdir -p .config/${dir} # make sure the directory exists before we create the symlink
+  ln -sfn ${CURR_DIR}/${dir}-config .config/${dir}/config
+done 
 #(crontab -l 2>/dev/null; echo "1 * * * * ctags -R -o ~/tags ~/src") | crontab -

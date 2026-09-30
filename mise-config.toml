@@ -1,12 +1,25 @@
+[env]
+# Make Poetry create the venv inside the project (crucial for
+# IDE discovery, DVC, and consistent paths across the team)
+POETRY_VIRTUALENVS_IN_PROJECT = "true"
+# Ensures Poetry respects mise's Python, not whatever's on $PATH
+POETRY_VIRTUALENVS_PREFER_ACTIVE_PYTHON = "true"
+
 [tools]
 direnv = "2.35.0"
-node = "latest"
+node = "22.22.3"
 pandoc = "latest"
-poetry = "2.1.4"
-python = "3.11.11"
+python = "3.12.6"
 ruby = "3.4.1"
 terraform = "latest"
 yarn = "latest"
 jj = "latest"
 pinact = "latest"
 "npm:hunkdiff" = "latest"
+uv = "latest"
+zellij = "latest"
+gcloud = "502.0.0"
+"aqua:1password/cli" = "2.33.1"
+
+[settings.python]
+compile = true
