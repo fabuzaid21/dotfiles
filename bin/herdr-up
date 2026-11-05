@@ -1,0 +1,25 @@
+#!/usr/bin/env zsh
+# Start/attach herdr with a workspace for each core repo. Idempotent:
+# repos that already have a workspace (matched by label) are skipped.
+set -euo pipefail
+
+CODE="$HOME/code"
+REPOS=(platform-new prediction-service chief-of-staff infra fd-factory neo-bots security-questionnaires marketing-site-new)
+
+if ! herdr status server 2>/dev/null | grep -q 'status: running'; then
+  nohup herdr server >/dev/null 2>&1 &
+  for _ in {1..50}; do
+    herdr workspace list >/dev/null 2>&1 && break
+    sleep 0.1
+  done
+fi
+
+existing=$(herdr workspace list | jq -r '.result.workspaces[].label')
+
+for repo in $REPOS; do
+  [[ -d "$CODE/$repo" ]] || { echo "skip $repo: $CODE/$repo not found" >&2; continue; }
+  grep -qxF "$repo" <<<"$existing" && continue
+  herdr workspace create --cwd "$CODE/$repo" --label "$repo" --no-focus >/dev/null
+done
+
+exec herdr "$@"

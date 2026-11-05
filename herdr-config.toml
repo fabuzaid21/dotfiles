@@ -1,0 +1,14 @@
+onboarding = false
+
+[ui.toast]
+delivery = "terminal"
+
+[ui]
+status_indicators = "symbols"
+
+[theme]
+name = "solarized"
+auto_switch = false
+
+[keys]
+open_worktree = "prefix+shift+o"

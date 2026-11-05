@@ -18,6 +18,8 @@ pinact = "latest"
 "npm:hunkdiff" = "latest"
 uv = "latest"
 zellij = "latest"
+herdr = "latest"
+"github:roborev-dev/roborev" = "latest"
 gcloud = "502.0.0"
 "aqua:1password/cli" = "2.33.1"
 

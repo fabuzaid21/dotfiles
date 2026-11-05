@@ -1,6 +1,6 @@
 
-# Kiro CLI pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.pre.zsh"
+# Ensure ~/.local/bin is on PATH (once)
+case ":$PATH:" in *":$HOME/.local/bin:"*) ;; *) export PATH="${PATH:+$PATH:}$HOME/.local/bin" ;; esac
 
 # Q pre block. Keep at the top of this file.
 DEFAULT_USER=`whoami`
@@ -122,5 +122,11 @@ zstyle ':completion:*' menu select
 
 
 
-# Kiro CLI post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/kiro-cli/shell/zshrc.post.zsh"
+
+# >>> neo.tax local-env setup >>>
+# Activate Homebrew and mise in every shell session.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(mise activate zsh)"
+# <<< neo.tax local-env setup <<<
+
+[ -f "$HOME/.cargo/env" ] && . "$HOME/.cargo/env"
