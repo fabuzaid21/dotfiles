@@ -2,6 +2,9 @@
 set -euo pipefail
 
 git fetch -p -P
+# origin/HEAD is set at clone time and never updated by fetch; re-sync it so a
+# changed default branch (e.g. master -> development) is picked up.
+git remote set-head origin -a >/dev/null
 
 main_wt=$(git worktree list --porcelain | sed -n '1s/^worktree //p')
 default=$(git symbolic-ref -q --short refs/remotes/origin/HEAD || true)
