@@ -12,3 +12,6 @@ auto_switch = false
 
 [keys]
 open_worktree = "prefix+shift+o"
+
+[worktrees]
+directory = "~/code/.worktrees"
