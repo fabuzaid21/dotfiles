@@ -7,7 +7,7 @@ CODE="$HOME/code"
 REPOS=(platform-new prediction-service chief-of-staff infra fd-factory neo-bots security-questionnaires marketing-site-new)
 # Repos whose mise.local.toml should be visible to herdr worktrees, which live
 # under $CODE/.worktrees/<repo>/<branch> (see worktrees.directory in herdr config).
-MISE_REPOS=(platform-new prediction-service infra neo-bots)
+MISE_REPOS=(platform-new prediction-service infra fd-factory neo-bots)
 
 for repo in $MISE_REPOS; do
   src="$CODE/$repo/mise.local.toml"
